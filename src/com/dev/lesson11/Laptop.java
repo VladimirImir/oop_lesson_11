@@ -1,5 +1,7 @@
 package com.dev.lesson11;
 
+/** Laptop <- Computer -< Object */
+
 public class Laptop extends Computer {
 
     private int weight;

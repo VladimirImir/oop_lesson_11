@@ -11,5 +11,6 @@ public class OopLessonRunner {
         Laptop laptop = new Laptop(new Ssd(128), new Ram(256), 2);
         laptop.open();
         laptop.load();
+        System.out.println(laptop);
     }
 }
