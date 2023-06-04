@@ -11,23 +11,11 @@ public final class Laptop extends Computer {
 
     private int weight;
 
-    {
-        System.out.println("init block laptop");
-    }
-
-    static {
-        System.out.println("static block laptop");
-    }
-
     public Laptop(Ssd ssd, Ram ram, int weight) {
-        super();
+        super(ssd, ram);
         this.weight = weight;
         /** super - ключевое слово через какое мы вызываем конструктор нашего базового класса. */
         /** super - ключевое слово через какое мы мы можем обращаться ко всему из базового класса. */
-    }
-
-    public Laptop() {
-        System.out.println("Constructor laptop!");
     }
 
     /**
@@ -35,7 +23,14 @@ public final class Laptop extends Computer {
      */
     @Override
     public void load() {
+        open();
+        System.out.println("Я загрузился!");
+    }
 
+    @Override
+    public void print(){
+        super.print();
+        System.out.println("Weight: " + weight);
     }
 
     public void open() {

@@ -6,8 +6,8 @@ public class OopLessonRunner2 {
         /** Laptop -> Computer -> Object */
         /** Laptop <- Computer <- Object */
 
-        new Laptop();
+        /*new Laptop();
         System.out.println();
-        new Laptop();
+        new Laptop();*/
     }
 }
