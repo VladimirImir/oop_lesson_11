@@ -4,7 +4,10 @@ package com.dev.lesson11;
  * Laptop <- Computer -< Object
  */
 
-public class Laptop extends Computer {
+/**
+ * final - показывает что это константа и её нельзя переопределить.
+ */
+public final class Laptop extends Computer {
 
     private int weight;
 
@@ -25,6 +28,14 @@ public class Laptop extends Computer {
 
     public Laptop() {
         System.out.println("Constructor laptop!");
+    }
+
+    /**
+     * @Override - эта аннотация показывает что метод переопределен из нашего базового класаа.
+     */
+    @Override
+    public void load() {
+
     }
 
     public void open() {

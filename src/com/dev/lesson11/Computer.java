@@ -1,6 +1,6 @@
 package com.dev.lesson11;
 
-public class Computer {
+public abstract class Computer {
 
     private Ssd ssd;
     private Ram ram;
@@ -23,9 +23,11 @@ public class Computer {
         System.out.println("Constructor computer!");
     }
 
-    public void load() {
+    public abstract void load();
+
+    /*public void load() {
         System.out.println("Я загрузился!");
-    }
+    }*/
 
     public Ssd getSsd() {
         return ssd;
