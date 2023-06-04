@@ -1,6 +1,6 @@
 package com.dev.lesson11;
 
-public abstract class Computer {
+public abstract class Computer implements Printable {
 
     private Ssd ssd;
     private Ram ram;
@@ -14,6 +14,10 @@ public abstract class Computer {
 
     public abstract void load();
 
+    /**
+     * @Override - эта аннотация показывает что метод переопределен из нашего базового класаа.
+     */
+    @Override
     public void print() {
         System.out.println("Ssd: " + ssd.getValue() + ", Ram: " + ram.getValue());
     }
