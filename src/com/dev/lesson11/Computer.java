@@ -11,9 +11,6 @@ public abstract class Computer {
         this.ram = ram;
     }
 
-    public Computer() {
-        System.out.println("Constructor computer!");
-    }
 
     public abstract void load();
 

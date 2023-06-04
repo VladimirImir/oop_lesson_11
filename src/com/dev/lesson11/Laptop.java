@@ -2,11 +2,15 @@ package com.dev.lesson11;
 
 /**
  * Laptop <- Computer -< Object
+ * <p>
+ * final - показывает что это константа и её нельзя переопределить.
  */
 
 /**
  * final - показывает что это константа и её нельзя переопределить.
  */
+
+/** Нельзя переопредилять static методы. */
 public final class Laptop extends Computer {
 
     private int weight;
@@ -28,7 +32,7 @@ public final class Laptop extends Computer {
     }
 
     @Override
-    public void print(){
+    public void print() {
         super.print();
         System.out.println("Weight: " + weight);
     }
